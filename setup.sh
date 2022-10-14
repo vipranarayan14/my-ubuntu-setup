@@ -44,8 +44,6 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 ## Choose HTTPS. Reason: https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password
 gh auth login
 
-
-
 # Install bat
 
 curl -sSL -o /tmp/bat.deb https://github.com/sharkdp/bat/releases/download/v0.22.1/bat-musl_0.22.1_amd64.deb
