@@ -29,7 +29,7 @@ fisher install jorgebucaran/nvm.fish # NVM
 
 nvm install lts
 
-# Install gh
+# Install GitHub CLI
 
 ## SRC: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 type -p curl >/dev/null || sudo apt install curl -y
@@ -38,6 +38,13 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
 && sudo apt update \
 && sudo apt install gh -y
+
+# Setup GitHub CLI
+
+## Choose HTTPS. Reason: https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password
+gh auth login
+
+
 
 # Install bat
 
